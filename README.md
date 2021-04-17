@@ -1,4 +1,6 @@
 # USB-RUBBERDUCKY-SILENT-PASSWORD-STEALER
+*DOES NOT WORK ANYMORE!!!!!*
+
 A fully silent (self deleting) usb rubber ducky script that steals passwords that are stored in web browsers and are sent VIA an SMT google server to a gmail account. 
 
 #HOW TO SET UP SMP 
